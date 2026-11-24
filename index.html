@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+     
+<!-- LOADING SCREEN -->
+<div id="loader">
+    <div class="loader-content">
+        <h1>FRIEREN</h1>
+        <p>BEYOND JOURNEY'S END</p>
+        <div class="loader-line"></div>
+    </div>
+</div>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">FRIEREN</div>
+
+        <ul>
+            <li><a href="#beranda">Home</a></li>
+            <li><a href="#galeri">Gallery</a></li>
+            <li><a href="#karakter">Characters</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+        <div class="hero-content">
+            <p>BEYOND JOURNEY'S END</p>
+            <h1>Frieren</h1>
+            <h2>Beyond Journey's End</h2>
+
+            <p class="description">
+                Sebuah perjalanan setelah petualangan berakhir.
+                Kisah tentang waktu, kenangan, dan persahabatan.
+            </p>
+
+            <a href="#galeri" class="btn">Explore Gallery</a>
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="gallery" id="galeri">
+        <h2>Gallery</h2>
+        <p>Moments of Frieren</p>
+
+        
+<div class="gallery-container">
+
+    <div class="slide active">
+        <img src="assets/galeri-1.jpg" alt="Frieren 1">
+    </div>
+
+    <div class="slide">
+        <img src="assets/galeri-2.jpg" alt="Frieren 2">
+    </div>
+
+    <div class="slide">
+        <img src="assets/galeri-3.jpg" alt="Frieren 3">
+    </div>
+
+    <div class="slide">
+        <img src="assets/galeri-4.jpg" alt="Frieren 4">
+    </div>
+
+    <div class="slide">
+        <img src="assets/galeri-5.jpg" alt="Frieren 5">
+    </div>
+
+    <div class="slide">
+        <img src="assets/galeri-6.jpg" alt="Frieren 6">
+    </div>
+
+</div>
+
+
+        </div>
+    </section>
+
+    <!-- KARAKTER -->
+    <section class="characters" id="karakter">
+        <h2>Characters</h2>
+        <p>Meet the characters</p>
+
+<input
+    type="text"
+    id="searchCharacter"
+    placeholder="Search character..."
+    class="search-character"
+>
+
+
+        <div class="character-container">
+
+            <div class="character-card">
+                <img src="assets/frieren.jpg" alt="Frieren">
+                <h3>Frieren</h3>
+                <p>Elf penyihir yang menjalani perjalanan panjang.</p>
+            </div>
+
+            <div class="character-card">
+                <img src="assets/fern.jpg" alt="Fern">
+                <h3>Fern</h3>
+                <p>Murid Frieren yang memiliki kemampuan sihir.</p>
+            </div>
+
+            <div class="character-card">
+                <img src="assets/stark.jpg" alt="Stark">
+                <h3>Stark</h3>
+                <p>Prajurit yang ikut dalam perjalanan Frieren.</p>
+            </div>
+
+
+<!-- CHARACTER DETAIL POPUP -->
+<div id="characterModal" class="character-modal">
+    <div class="character-modal-content">
+        <button id="closeCharacter" class="close-character">&times;</button>
+        <img id="detailImage" src="" alt="Character">
+        <h2 id="detailName"></h2>
+        <p id="detailDescription"></p>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Frieren Fan Website</p>
+    </footer>
+
+<audio id="bgMusic" loop>
+    <source src="assets/music/background.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton" class="music-button">
+    ♪ Play Music
+</button>
+
+
+<button id="backToTop" class="back-to-top">
+    ↑
+</button>
+
+</body>
+</html>
